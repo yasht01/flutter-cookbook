@@ -1,2 +1,2 @@
 # flutter-cookbook
-My experiments on Flutter
+https://docs.flutter.dev/cookbook
