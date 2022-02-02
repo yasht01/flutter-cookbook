@@ -1,22 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:animation/home_page.dart';
-import 'package:animation/contact_me_page.dart';
+
+import 'screens/first_page.dart';
+import 'screens/second_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      initialRoute: '/home',
       routes: {
-        '/home': (context) => HomePage(),
-        '/contact_me': (context) => ContactPage(),
+        '/': (context) => const FirstPage(),
+        '/second': (context) => const SecondPage(),
       },
+      debugShowCheckedModeBanner: false,
     );
   }
 }
